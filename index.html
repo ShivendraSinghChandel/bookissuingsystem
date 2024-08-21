@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">id</label>
+        <input type="text" id="id"> <br><br>
+        <label for="">Book name</label>
+        <input type="text" id="namee"> <br><br>
+        <label for="">Book Price</label>
+        <input type="text" id="numberr"> <br><br>
+        <label for="">Writer name</label>
+        <input type="text" id="writer"> <br><br>
+        <input type="submit" onclick="add();">
+    </form>
+    <table border="">
+        <thead>
+            <th>id</th>
+            <th>book name</th>
+            <th>book price</th>
+            <th>writer name</th>
+            <th>assign</th>
+        </thead>
+        <tbody id="displaydata">
+
+        </tbody>
+    </table>
+    <div style="height: 100px;">
+
+    </div>
+     
+    <table border="" id="userassignbook" style="display: none;">
+        <thead>
+            <th>id</th>
+            <th>book name</th>
+            <th>book price</th>
+            <th>writer</th>
+        </thead>
+        <tbody id="displaydataforuser">
+
+        </tbody>
+    </table>
+
+    <form onsubmit="return false"  action="" style="display: none;" id="userform">
+        <label for="">userid</label>
+        <input type="text" id="userid"><br><br>
+        <label for="">username</label>
+        <input type="text" id="username"><br><br>
+        <label for="">usercontact</label>
+        <input type="text" id="usercontact"><br><br>
+        <input type="submit" onclick="add1();">
+    </form>
+    
+    <table id="usertable" style="display: none;" border="">
+        <thead>
+            <th>userid</th>
+            <th>username</th>
+            <th>usercontact</th>
+            <th>bookid</th>
+        </thead>
+        <tbody id="userbookdata">
+
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
